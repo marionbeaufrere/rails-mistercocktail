@@ -12,7 +12,7 @@ class DosesController < ApplicationController
       redirect_to cocktail_path(@dose.cocktail)
     else
       @cocktail = Cocktail.find(params[:cocktail_id])
-      render :new
+      render "cocktails/show"
     end
   end
 

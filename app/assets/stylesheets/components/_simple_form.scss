@@ -1,4 +1,4 @@
-.simple_form {
+.simple_form_for_for {
   div.input {
     margin-bottom: 10px;
     clear: both;
@@ -12,7 +12,7 @@
   }
 }
 
-div.boolean, .simple_form input[type='submit'] {
+div.boolean, .simple_form_for input[type='submit'] {
   margin-left: 120px;
 }
 
@@ -37,7 +37,7 @@ label.collection_radio_buttons {
   background-color: #ff3333;
 }
 
-.simple_form {
+.simple_form_for {
   .error {
     clear: left;
     color: black;
