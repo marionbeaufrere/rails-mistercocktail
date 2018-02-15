@@ -11,7 +11,10 @@
   </head>
 
   <body>
-    <%= image_tag "cocktail.jpg", alt: "Cocktail", width: 200 %>
-    <%= yield %>
+    <div class= "container">
+      <%= image_tag "cocktail.jpg", alt: "Cocktail", width: 200, class: "card" %>
+      <%= yield %>
+    </div>
   </body>
 </html>
+
