@@ -1,13 +1,15 @@
-.img {
+.card-img {
   background-size: cover;
   background: white;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   align-items: center;
+  height: 150px;
 }
 .card-content {
   height: 50px;
   padding: 10px;
+  margin: 10px;
 }
 .card {
   margin: 5px;

@@ -7,7 +7,7 @@
           <div class="col-xs-12 col-sm-4 col-md-3">
             <div class="card">
               <div>
-              <%= image_tag "cocktail.jpg", alt: "Cocktail", width: "265", class: "img" %>
+              <%= image_tag "cocktail#{rand(1..6)}.jpg", alt: "Cocktail", width: "265", class: "card-img" %>
               </div>
               <div class="card-content">
                 <h4><%= link_to cocktail.name, cocktail %></h4>
