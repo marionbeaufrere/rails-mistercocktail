@@ -5,15 +5,32 @@
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="navbar-wagon navbar-expand-lg navbar-light bg-light">
+        <div class="navbar-brand">Mister Cocktail</div>
+        <div class="navbar-wagon-right hidden-xs hidden-sm">
+          <div class="ml-auto flex">
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" name="query" type="search" placeholder="Search" aria-label="Search" value="">
+              <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              <%= link_to "Add a Cocktail", new_cocktail_path, class: "btn btn-outline-primary my-2 my-sm-0 ml-2" %>
+            </form>
+          </div>
+        </div>
+      </div>
     <div class= "container">
       <%= yield %>
     </div>
+    <div class = "footer">
+      <h2><%= link_to "Create a new cocktail", new_cocktail_path %></h2>
+      </div>
+
   </body>
 </html>
 

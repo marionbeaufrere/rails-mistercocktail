@@ -2,5 +2,9 @@
 @import "home";
 
 body {
-  background: white
+  background: $canard;
+  color: $white;
+}
+.container {
+  height: 75vh;
 }

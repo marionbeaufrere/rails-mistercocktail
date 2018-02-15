@@ -1,26 +1,23 @@
-<div class = "controller">
+<div class = "container">
 <h2 class="text-center"> All our Cocktails </h2>
-  <div class = "container">
     <div class="container" id="home-cocktails">
       <h4 class="text-center">We have <%= @cocktails.length %> cocktails available</h4>
       <div class="row">
         <% @cocktails.each do |cocktail| %>
           <div class="col-xs-12 col-sm-4 col-md-3">
-            <div class="cocktail-card">
+            <div class="card">
               <div>
-              <%= image_tag "cocktail.jpg", alt: "Cocktail", width: 200, class: "card" %>
+              <%= image_tag "cocktail.jpg", alt: "Cocktail", width: "265", class: "img" %>
               </div>
-              <div class="cocktail-card-content">
+              <div class="card-content">
                 <h4><%= link_to cocktail.name, cocktail %></h4>
               </div>
-              <div class="cocktail-card-actions">
+              <div class="card-actions">
                 <%= link_to "More info", cocktail_path(cocktail) %>
               </div>
             </div>
           </div>
         <% end %>
       </div>
-    </div>
   </div>
-<%= link_to "Create a new cocktail", new_cocktail_path %></h3>
 </div>
