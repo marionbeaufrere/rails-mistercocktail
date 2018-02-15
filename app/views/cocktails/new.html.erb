@@ -1,5 +1,5 @@
 <%= simple_form_for [@cocktail] do |f| %>
-  <%= f.input :name %>
+  <%= f.input :name, label: false, placeholder: "Cocktail name" %>
   <%= f.submit "add cocktail", class: "btn btn-primary" %>
 <% end %>
 

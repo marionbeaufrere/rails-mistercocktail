@@ -1,7 +1,7 @@
 <h2> Add ingredients to <%= @cocktail.name %> </h2>
 <%= simple_form_for [@cocktail, @dose] do |f| %>
   <%= f.error_notification %>
-  <span class = "form-input"> <%= f.association :ingredient, collection: Ingredient.all%> </span>
-  <span class = "form-input"> <%= f.input :description %> <span class = "form-input">
+  <span class = "form-input"> <%= f.association :ingredient, label: false, placeholder: "Ingredient", collection: Ingredient.all%> </span>
+  <span class = "form-input"> <%= f.input :description, label: false, placeholder: "How much in ml?" %> <span class = "form-input">
   <%= f.submit "add a dose", class: "btn btn-primary" %>
 <% end %>
