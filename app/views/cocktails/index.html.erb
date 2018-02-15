@@ -1,0 +1,10 @@
+<div class = "controller">
+<h1> Your list of cocktails </h1>
+<ul>
+<% @cocktails.each do |cocktail| %>
+  <h2> <li> <%= link_to cocktail.name, cocktail %> </h2>
+<% end %>
+</ul>
+</div>
+
+<h1> <%= link_to "Create a new cocktail", new_cocktail_path %></h1>
