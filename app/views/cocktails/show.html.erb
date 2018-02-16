@@ -1,5 +1,6 @@
 <div class = "container">
 <h2> What is inside a <%= @cocktail.name %>?</h2>
+<%= cl_image_tag @cocktail.photo, height: 300, width: 400, crop: :fill %>
 <ul>
   <% @doses.each do |dose| %>
     <li>

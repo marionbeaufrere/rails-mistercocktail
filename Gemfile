@@ -9,6 +9,7 @@ ruby '2.4.3'
 
 gem 'figaro'
 gem 'cloudinary'
+gem 'carrierwave', '~> 1.2'
 
 #frontend
 gem 'autoprefixer-rails'
