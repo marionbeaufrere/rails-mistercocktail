@@ -25,13 +25,15 @@
   height: 200px;
 }
 .card-content {
-  height: 20px;
+  height: 10px;
   padding: 10px;
   margin: 10px;
 }
 .card-actions {
   padding: 10px;
   width: 270px;
+  color: #F4F4F4;
+  text-align: left;
 }
 .card:hover {
     transform:rotateY(180deg);
