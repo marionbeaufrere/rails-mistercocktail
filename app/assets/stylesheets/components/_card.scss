@@ -6,6 +6,7 @@
   box-shadow: 5px $unpeumoinslight-gray;
   background: $white;
   transition: all 1s ease-in-out;
+/*  transition-delay: 1s;*/
   transform-style: preserve-3d;
   backface-visibility: hidden;
   perspective: 300;
@@ -25,6 +26,7 @@ card figure {
   border-top-right-radius: 5px;
   align-items: center;
   height: 250px;
+  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 .card h3 {
   position: relative;
