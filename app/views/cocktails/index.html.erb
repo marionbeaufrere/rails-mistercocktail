@@ -7,24 +7,24 @@
 
 <div class="container" id="home-cocktails">
   <h2 class="text-center"> All our Cocktails </h2>
-        <h4 class="text-center">We have <%= @cocktails.length %> cocktails available</h4>
-        <div class="row">
-          <% @cocktails.each do |cocktail| %>
-            <div class="col-xs-12 col-sm-4 col-md-3">
+  <h4 class="text-center">We have <%= @cocktails.length %> cocktails available</h4>
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col-xs-12 col-sm-4 col-md-3">
 
-              <div class="card">
-                <%= image_tag "cocktail#{rand(1..6)}.jpg", alt: "Cocktail", width: "265", class: "card-img" %>
-                <div class="card-content">
-                  <h4><%= link_to cocktail.name.capitalize, cocktail %></h4>
-                </div>
-                <div class="card-actions">
-                  <%= link_to "More info", cocktail_path(cocktail) %>
-                </div>
-              </div>
+          <div class="card">
+            <%= image_tag "cocktail#{rand(1..6)}.jpg", alt: "Cocktail", width: "265", class: "card-img" %>
+            <div class="card-content">
+              <h4><%= link_to cocktail.name.capitalize, cocktail %></h4>
             </div>
-          <% end %>
-          <br>
+            <div class="card-actions">
+              <%= link_to "More info", cocktail_path(cocktail) %>
+            </div>
+          </div>
         </div>
-    <div class = "btn btn-primary"><%= link_to "Create a new cocktail", new_cocktail_path %></div>
+      <% end %>
+      <br>
+    </div>
+  <h4 class="text-center"><div class = "btn btn-primary"><%= link_to "Create a new cocktail", new_cocktail_path %></div></h4>
 </div>
 

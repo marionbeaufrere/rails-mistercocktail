@@ -7,6 +7,8 @@ end
 
 ruby '2.4.3'
 
+gem 'figaro'
+
 #frontend
 gem 'autoprefixer-rails'
 gem 'bootstrap-sass' # Bootstrap v3
