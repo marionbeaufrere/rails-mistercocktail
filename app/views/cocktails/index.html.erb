@@ -15,7 +15,7 @@
               <div class="card">
                 <%= image_tag "cocktail#{rand(1..6)}.jpg", alt: "Cocktail", width: "265", class: "card-img" %>
                 <div class="card-content">
-                  <h4><%= link_to cocktail.name, cocktail %></h4>
+                  <h4><%= link_to cocktail.name.capitalize, cocktail %></h4>
                 </div>
                 <div class="card-actions">
                   <%= link_to "More info", cocktail_path(cocktail) %>

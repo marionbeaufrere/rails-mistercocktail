@@ -1,3 +1,16 @@
+a {
+  text-decoration: none;
+  color: $gray;
+  padding: 10px;
+  width: 100px;
+  opacity: 0.9;
+}
+
+#home-cocktails {
+  align-items: center;
+  padding: 5px;
+  margin: 50px;
+}
 .card-img {
   background-size: cover;
   background: white;
@@ -17,7 +30,7 @@
   border: 2px solid $light-gray;
   border-radius: 5px;
   box-shadow: 5px $unpeumoinslight-gray;
-  background: $light-gray;
+  background: $white;
   -webkit-transition: -webkit-transform 1s;
          -moz-transition: -moz-transform 1s;
            -o-transition: -o-transform 1s;
@@ -32,11 +45,6 @@
 .card-actions {
   padding: 10px;
   width: 270px;
-}
-#home-cocktails {
-  align-items: center;
-  padding: 5px;
-  margin: 50px;
 }
 .card:hover {
     transform:rotateY(180deg);
