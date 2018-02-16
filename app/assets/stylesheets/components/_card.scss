@@ -24,7 +24,7 @@ card figure {
 }
 .card-img {
   background-size: cover !important;
-  background: white;
+  background: transparent;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   align-items: center;
@@ -76,7 +76,7 @@ card figure {
   z-index: 2;
   }
 #back {
-  background: white;
+  background: transparent;
   height: 120px;
   transform: rotateY( 180deg );
   }
