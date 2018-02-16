@@ -2,7 +2,7 @@ class CocktailsController < ApplicationController
   def index
     # @cocktails = Cocktail.all
     @cocktails = if params[:term]
-      Cocktail.where('name LIKE ?', "%#{params[:term]}%")
+      Cocktail.where('lower(name) LIKE ?', "%#{params[:term]}%")
     else
       Cocktail.all
     end

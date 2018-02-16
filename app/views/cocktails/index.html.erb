@@ -11,9 +11,13 @@
     <div class="row">
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4 col-md-3">
-          <div class="card">
+          <div class="card" ontouchstart="this.classList.toggle('hover');">
             <figure id="front">
+              <% if cocktail.photo.file.nil? %>
+                <%= image_tag ("https://source.unsplash.com/1600x900/?#{cocktail.name}"), width: 265, crop: :fill, class: "card-img"  %>
+              <% else %>
                 <%= cl_image_tag cocktail.photo, width: 265, crop: :fill, class: "card-img"  %>
+              <% end %>
                 <h3>
                   <%= cocktail.name.capitalize %>
                 </h3>
