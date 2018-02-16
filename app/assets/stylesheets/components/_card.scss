@@ -11,6 +11,9 @@
   backface-visibility: hidden;
   perspective: 300;
 }
+#cocktail-link {
+  color: white !important;
+}
 card figure {
   margin: 0;
   display: block;
@@ -26,7 +29,7 @@ card figure {
   border-top-right-radius: 5px;
   align-items: center;
   height: 250px;
-  background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
+  background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.5));
 }
 .card h3 {
   position: relative;
@@ -70,6 +73,7 @@ card figure {
 #front {
   height: 120px;
   align-items: center;
+  z-index: 2;
   }
 #back {
   background: white;

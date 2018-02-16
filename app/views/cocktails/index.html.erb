@@ -12,9 +12,9 @@
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4 col-md-3">
           <div class="card" ontouchstart="this.classList.toggle('hover');">
-            <figure id="front">
+            <div id="front">
               <% if cocktail.photo.file.nil? %>
-                <%= image_tag ("https://source.unsplash.com/1600x900/?#{cocktail.name}"), width: 265, crop: :fill, class: "card-img"  %>
+                <%= image_tag ("https://source.unsplash.com/1600x900/?#{cocktail.name}"), width: 265, crop: :fill, class: "card-img" %>
               <% else %>
                 <%= cl_image_tag cocktail.photo, width: 265, crop: :fill, class: "card-img"  %>
               <% end %>
@@ -22,8 +22,8 @@
                   <%= cocktail.name.capitalize %>
                 </h3>
 <!--                 <%= link_to "Go to cocktail", cocktail_path(cocktail) %> -->
-            </figure>
-            <figure id="back">
+            </div>
+            <div id="back">
               <h4> Ingredients: </h4>
               <ul>
                 <% cocktail.doses.each do |dose| %>
@@ -33,13 +33,13 @@
                   </li>
                 <% end %>
               </ul>
-            </figure>
+            </div>
           </div>
         </div>
       <% end %>
       <br>
     </div>
-  <h4 class="text-center"><div class = "btn btn-primary"><%= link_to "Create a new cocktail", new_cocktail_path %></div></h4>
+  <h4 class="text-center"><div class = "btn btn-primary"><%= link_to "Create a new cocktail", new_cocktail_path, id: "cocktail-link" %></div></h4>
   <br>
 </div>
 
