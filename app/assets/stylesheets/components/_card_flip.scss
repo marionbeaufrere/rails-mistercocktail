@@ -1,0 +1,50 @@
+.flip-card-container {
+      width: 200px;
+      height: 260px;
+      position: relative;
+      margin: 0 auto 10px;
+      border: 1px solid #CCC;
+      -webkit-perspective: 800px;
+         -moz-perspective: 800px;
+           -o-perspective: 800px;
+              perspective: 800px;
+    }
+    #card.flipped {
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+
+    #card figure {
+      display: block;
+      height: 100%;
+      width: 100%;
+      line-height: 260px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      font-size: 140px;
+      position: absolute;
+      -webkit-backface-visibility: hidden;
+         -moz-backface-visibility: hidden;
+           -o-backface-visibility: hidden;
+              backface-visibility: hidden;
+    }
+
+    #card .front {
+      background: white;
+
+    }
+
+    #card .back {
+      background: white;
+      -webkit-transform: rotateY( 180deg );
+         -moz-transform: rotateY( 180deg );
+           -o-transform: rotateY( 180deg );
+              transform: rotateY( 180deg );
+    }
+    #card:hover {
+    transform:rotateY(180deg);
+
+    }

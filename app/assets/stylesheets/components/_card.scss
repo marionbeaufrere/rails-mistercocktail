@@ -4,10 +4,10 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   align-items: center;
-  height: 180px;
+  height: 200px;
 }
 .card-content {
-  height: 50px;
+  height: 30px;
   padding: 10px;
   margin: 10px;
 }
@@ -18,12 +18,36 @@
   border-radius: 5px;
   box-shadow: 5px $unpeumoinslight-gray;
   background: $light-gray;
+  -webkit-transition: -webkit-transform 1s;
+         -moz-transition: -moz-transform 1s;
+           -o-transition: -o-transform 1s;
+              transition: transform 1s;
+      -webkit-transform-style: preserve-3d;
+         -moz-transform-style: preserve-3d;
+           -o-transform-style: preserve-3d;
+              transform-style: preserve-3d;
+  backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
 }
 .card-actions {
   padding: 10px;
   width: 270px;
 }
-.card-content-container {
+#home-cocktails {
   align-items: center;
   padding: 5px;
+  margin: 50px;
 }
+.card:hover {
+    transform:rotateY(180deg);
+  }
+#front {
+  background: white;
+  }
+#back {
+  background: white;
+    -webkit-transform: rotateY( 180deg );
+      -moz-transform: rotateY( 180deg );
+        -o-transform: rotateY( 180deg );
+          transform: rotateY( 180deg );
+  }
