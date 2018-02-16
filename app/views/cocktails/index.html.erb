@@ -6,12 +6,12 @@
     </div>
 
 <div class="container" id="home-cocktails">
+  <%= cl_image_tag("thb8kjs8tdrathwfeouh", width: 400, height: 300, crop: :fill) %>
   <h2 class="text-center"> All our Cocktails </h2>
   <h4 class="text-center">We have <%= @cocktails.length %> cocktails available</h4>
     <div class="row">
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4 col-md-3">
-
           <div class="card">
             <%= image_tag "cocktail#{rand(1..6)}.jpg", alt: "Cocktail", width: "265", class: "card-img" %>
             <div class="card-content">

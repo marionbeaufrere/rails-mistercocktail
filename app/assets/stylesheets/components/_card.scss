@@ -1,30 +1,3 @@
-a {
-  text-decoration: none;
-  color: $gray;
-  padding: 10px;
-  width: 100px;
-  opacity: 0.9;
-}
-
-#home-cocktails {
-  align-items: center;
-  padding: 5px 10px;
-  margin: 50px;
-  width: 95%;
-}
-.card-img {
-  background-size: cover;
-  background: white;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-  align-items: center;
-  height: 200px;
-}
-.card-content {
-  height: 30px;
-  padding: 10px;
-  margin: 10px;
-}
 .card {
   margin: 5px;
   width: 270px;
@@ -43,6 +16,19 @@ a {
   backface-visibility: hidden;
     -webkit-backface-visibility: hidden;
 }
+.card-img {
+  background-size: cover;
+  background: white;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  align-items: center;
+  height: 200px;
+}
+.card-content {
+  height: 20px;
+  padding: 10px;
+  margin: 10px;
+}
 .card-actions {
   padding: 10px;
   width: 270px;
@@ -50,6 +36,25 @@ a {
 .card:hover {
     transform:rotateY(180deg);
   }
+.row {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.card a {
+  text-decoration: none;
+  color: $gray;
+  padding: 10px;
+  width: 100px;
+  opacity: 0.9;
+}
+
+#home-cocktails {
+  align-items: center;
+/*  padding: 5px 10px;
+  margin: 50px;*/
+/*  width: 95%;*/
+}
+
 #front {
   background: white;
   }
@@ -60,7 +65,3 @@ a {
         -o-transform: rotateY( 180deg );
           transform: rotateY( 180deg );
   }
-.row {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}

@@ -1,3 +1,4 @@
+<div class = "container">
 <h2> What is inside a <%= @cocktail.name %>?</h2>
 <ul>
   <% @doses.each do |dose| %>
@@ -13,3 +14,4 @@
 <p><%= link_to "Add an ingredient", new_cocktail_dose_path(@cocktail) %></p>
 
 <h4><%= link_to "Back to the list of cocktails", cocktails_path %></h4>
+</div>

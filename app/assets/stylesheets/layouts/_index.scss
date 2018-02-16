@@ -3,3 +3,7 @@
 // @import "dashboard";
 // @import "profile";
 // @import "map";
+
+.container {
+  min-height: calc(100vh - 170px)
+}
