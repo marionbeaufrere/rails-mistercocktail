@@ -8,6 +8,7 @@ end
 ruby '2.4.3'
 
 gem 'figaro'
+gem 'cloudinary'
 
 #frontend
 gem 'autoprefixer-rails'
