@@ -1,10 +1,11 @@
 .footer {
   background: $canard;
-  opacity: 0.7;
+  opacity: 0.3;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 60px;
+  margin-top: 50px;
+  height: 80px;
   padding: 0px 50px;
   color: $white;
 }

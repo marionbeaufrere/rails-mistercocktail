@@ -12,20 +12,23 @@
       <% @cocktails.each do |cocktail| %>
         <div class="col-xs-12 col-sm-4 col-md-3">
           <div class="card">
-            <%= image_tag "cocktail#{rand(1..6)}.jpg", alt: "Cocktail", width: "265", class: "card-img" %>
-            <h3>
-              <%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %>
-            </h3>
-            <div class="card-content">
-            <p>
-              <% cocktail.doses.each do |dose| %>
-                <%= dose.description %>
-                <%= dose.ingredient.name %>
-              <% end %>
-            </p>
-            </div>
-            <div class="card-actions">
-            </div>
+            <figure id="front">
+              <%= cl_image_tag cocktail.photo, width: 265, crop: :fill, class: "card-img"  %>
+              <h3>
+                <%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %>
+              </h3>
+            </figure>
+            <figure id="back">
+              <h3> Ingredients: </h3>
+              <ul>
+                <% cocktail.doses.each do |dose| %>
+                  <li>
+                    <%= dose.description %>
+                    <%= dose.ingredient.name %>
+                  </li>
+                <% end %>
+              </ul>
+            </figure>
           </div>
         </div>
       <% end %>
