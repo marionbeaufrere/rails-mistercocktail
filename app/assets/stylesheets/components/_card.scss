@@ -30,6 +30,13 @@ card figure {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   align-items: center;
+  height: 250px;
+}
+.card h3 {
+  position: relative;
+  bottom: 160px;
+  left: 20px;
+  color: white;
 }
 .card-content {
   height: 10px;

@@ -13,13 +13,14 @@
         <div class="col-xs-12 col-sm-4 col-md-3">
           <div class="card">
             <figure id="front">
-              <%= cl_image_tag cocktail.photo, width: 265, crop: :fill, class: "card-img"  %>
-              <h3>
-                <%= link_to cocktail.name.capitalize, cocktail_path(cocktail) %>
-              </h3>
+                <%= cl_image_tag cocktail.photo, width: 265, crop: :fill, class: "card-img"  %>
+                <h3>
+                  <%= cocktail.name.capitalize %>
+                </h3>
+<!--                 <%= link_to "Go to cocktail", cocktail_path(cocktail) %> -->
             </figure>
             <figure id="back">
-              <h3> Ingredients: </h3>
+              <h4> Ingredients: </h4>
               <ul>
                 <% cocktail.doses.each do |dose| %>
                   <li>
